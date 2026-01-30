@@ -1,9 +1,16 @@
 def calculate_aminoacid_frequencies(fasta_filename,subsequences_filename,number_of_repetitions, output_filename):
     """
-    Calculate the absolute and relative frequencies of specific sub-sequences within 
-    a set of proteins from a FASTA file. Only proteins containing the sub-sequence at 
-    least N times are considered. Results are saved to an output file, sorted by 
-    descending frequency.
+    Calculates the absolute and relative frequencies of specific sub-sequences within a set of proteins from a FASTA file. 
+    Only proteins containing the sub-sequence at least N times are considered. 
+
+    Args:
+        fasta_filename (str): Path to the protein FASTA file.
+        subsequences_filename (str): Path to the subsequences file.
+        number_of_repetitions (int): Number of repetitions of the subsequences
+        output_filename (str): Name or path of the file where results will be saved.        
+    
+    Results:
+        saved to an output file, sorted by descending frequency.
     """
     list_subseq = []
     dic_prote = {}
